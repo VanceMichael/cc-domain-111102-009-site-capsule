@@ -1,0 +1,10 @@
+{
+  "https://exhibition.invalid/show/jump.css": [
+    {
+      "status": 302,
+      "headers": {
+        "Location": "https://outside.invalid/whole-site"
+      }
+    }
+  ]
+}
