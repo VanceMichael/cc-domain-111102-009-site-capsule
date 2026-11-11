@@ -1,5 +1,6 @@
 import unittest
 import json
+import _path  # noqa: F401  隔离模式路径引导
 from app.wire import Replay
 
 from app.references import inspect_links

@@ -1,0 +1,672 @@
+{
+  "schema": "site-capsule/manifest/1",
+  "generated_at": "2026-11-11T19:47:38+00:00",
+  "seeds": [
+    "https://exhibition.invalid/show/index.html"
+  ],
+  "scope": {
+    "page_prefixes": [
+      "https://exhibition.invalid/show/"
+    ],
+    "resource_origins": [
+      "https://exhibition.invalid"
+    ]
+  },
+  "budgets": {
+    "max_pages": 8,
+    "max_resources": 40,
+    "max_bytes": 1048576,
+    "max_depth": 3
+  },
+  "counters": {
+    "pages": 3,
+    "resources": 8,
+    "stored_bytes": 1995
+  },
+  "complete": false,
+  "incomplete_reasons": [
+    {
+      "url": "https://exhibition.invalid/show/other.html?lang=en",
+      "kind": "page",
+      "status": "failed",
+      "reason": "http_error_status"
+    },
+    {
+      "url": "https://exhibition.invalid/show/jump.css",
+      "kind": "resource",
+      "status": "denied",
+      "reason": "out_of_scope_resource_origin"
+    },
+    {
+      "url": "https://exhibition.invalid/show/other.html?lang=en",
+      "via": "https://exhibition.invalid/show/index.html",
+      "status": "failed",
+      "reason": "http_error_status"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://exhibition.invalid/show/index.html",
+      "kind": "page",
+      "status": "captured",
+      "reason": null,
+      "depth": 0,
+      "parent": null,
+      "final_url": "https://exhibition.invalid/show/index.html",
+      "media_type": "text/html",
+      "charset": "utf-8",
+      "sha256": "4c125216e95118181c100bef4a95fed0aae0bde18824aef9a9d13f3690d756a4",
+      "bytes": 1079,
+      "store_path": "store/4c/4c125216e95118181c100bef4a95fed0aae0bde18824aef9a9d13f3690d756a4.html",
+      "published_path": "pages/show/index.html",
+      "shared_with": [],
+      "hops": []
+    },
+    {
+      "url": "https://exhibition.invalid/show/other.html",
+      "kind": "page",
+      "status": "captured",
+      "reason": null,
+      "depth": 1,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "final_url": "https://exhibition.invalid/show/other.html",
+      "media_type": "text/html",
+      "charset": "utf-8",
+      "sha256": "ae7dba1f1bee722abd4e84c9f24153ef7db7a48dd3174a9faaa68bbb0c039406",
+      "bytes": 355,
+      "store_path": "store/ae/ae7dba1f1bee722abd4e84c9f24153ef7db7a48dd3174a9faaa68bbb0c039406.html",
+      "published_path": "pages/show/other.html",
+      "shared_with": [],
+      "hops": []
+    },
+    {
+      "url": "https://exhibition.invalid/show/other.html?lang=en",
+      "kind": "page",
+      "status": "failed",
+      "reason": "http_error_status",
+      "depth": 1,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "final_url": "https://exhibition.invalid/show/other.html?lang=en",
+      "media_type": null,
+      "charset": null,
+      "sha256": null,
+      "bytes": 0,
+      "store_path": null,
+      "published_path": null,
+      "shared_with": [],
+      "hops": []
+    },
+    {
+      "url": "https://exhibition.invalid/show/detail.html",
+      "kind": "page",
+      "status": "captured",
+      "reason": null,
+      "depth": 1,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "final_url": "https://exhibition.invalid/show/detail.html",
+      "media_type": "text/html",
+      "charset": "utf-8",
+      "sha256": "a82f6554f1a14223ddaed87a91cd0a28681b1f0b97e5f0f03d87ec5626e428e4",
+      "bytes": 203,
+      "store_path": "store/a8/a82f6554f1a14223ddaed87a91cd0a28681b1f0b97e5f0f03d87ec5626e428e4.html",
+      "published_path": "pages/show/detail.html",
+      "shared_with": [],
+      "hops": []
+    }
+  ],
+  "resources": [
+    {
+      "url": "https://exhibition.invalid/show/style.css",
+      "kind": "resource",
+      "status": "captured",
+      "reason": null,
+      "depth": 0,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "final_url": "https://exhibition.invalid/show/style.css",
+      "media_type": "text/css",
+      "charset": "utf-8",
+      "sha256": "32292eba1c96c5107f5eb35c14b40a27b0c73ff14cadf8d5b41b05d6a8da8b59",
+      "bytes": 67,
+      "store_path": "store/32/32292eba1c96c5107f5eb35c14b40a27b0c73ff14cadf8d5b41b05d6a8da8b59.css",
+      "published_path": "assets/css/32292eba1c96.css",
+      "shared_with": [],
+      "hops": []
+    },
+    {
+      "url": "https://exhibition.invalid/favicon.ico",
+      "kind": "resource",
+      "status": "captured",
+      "reason": null,
+      "depth": 0,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "final_url": "https://exhibition.invalid/favicon.ico",
+      "media_type": "image/x-icon",
+      "charset": null,
+      "sha256": "838612a95128acb18efa5eacdfad8463afcc3ea1b4ce643f0f41a05947dca9cc",
+      "bytes": 12,
+      "store_path": "store/83/838612a95128acb18efa5eacdfad8463afcc3ea1b4ce643f0f41a05947dca9cc.ico",
+      "published_path": null,
+      "shared_with": [],
+      "hops": []
+    },
+    {
+      "url": "https://exhibition.invalid/show/image.png?size=s",
+      "kind": "resource",
+      "status": "captured",
+      "reason": null,
+      "depth": 0,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "final_url": "https://exhibition.invalid/show/image.png?size=s",
+      "media_type": "image/png",
+      "charset": null,
+      "sha256": "5753e25d143eb0729482d6029b97d8a4bd2f7a0f0d28d4964300eb867a5940a0",
+      "bytes": 70,
+      "store_path": "store/57/5753e25d143eb0729482d6029b97d8a4bd2f7a0f0d28d4964300eb867a5940a0.png",
+      "published_path": null,
+      "shared_with": [
+        "https://exhibition.invalid/show/image-large.png"
+      ],
+      "hops": []
+    },
+    {
+      "url": "https://exhibition.invalid/show/image-large.png",
+      "kind": "resource",
+      "status": "captured",
+      "reason": null,
+      "depth": 0,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "final_url": "https://exhibition.invalid/show/image-large.png",
+      "media_type": "image/png",
+      "charset": null,
+      "sha256": "5753e25d143eb0729482d6029b97d8a4bd2f7a0f0d28d4964300eb867a5940a0",
+      "bytes": 70,
+      "store_path": "store/57/5753e25d143eb0729482d6029b97d8a4bd2f7a0f0d28d4964300eb867a5940a0.png",
+      "published_path": null,
+      "shared_with": [
+        "https://exhibition.invalid/show/image.png?size=s"
+      ],
+      "hops": []
+    },
+    {
+      "url": "https://exhibition.invalid/show/tile-blue.png",
+      "kind": "resource",
+      "status": "captured",
+      "reason": null,
+      "depth": 0,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "final_url": "https://exhibition.invalid/show/tile-blue.png",
+      "media_type": "image/png",
+      "charset": null,
+      "sha256": "4929d7f3434e0c507c48750f18cad27894ccb1d80c1306b66fc7c81f1e95ecbf",
+      "bytes": 74,
+      "store_path": "store/49/4929d7f3434e0c507c48750f18cad27894ccb1d80c1306b66fc7c81f1e95ecbf.png",
+      "published_path": null,
+      "shared_with": [
+        "https://exhibition.invalid/show/flaky.png"
+      ],
+      "hops": []
+    },
+    {
+      "url": "https://exhibition.invalid/show/jump.css",
+      "kind": "resource",
+      "status": "denied",
+      "reason": "out_of_scope_resource_origin",
+      "depth": 0,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "final_url": null,
+      "media_type": null,
+      "charset": null,
+      "sha256": null,
+      "bytes": 0,
+      "store_path": null,
+      "published_path": null,
+      "shared_with": [],
+      "hops": [
+        {
+          "url": "https://exhibition.invalid/show/jump.css",
+          "status": 302,
+          "location": "https://exhibition.invalid/redirect/second"
+        },
+        {
+          "url": "https://exhibition.invalid/redirect/second",
+          "status": 302,
+          "location": "https://outside.invalid/whole-site.css"
+        }
+      ]
+    },
+    {
+      "url": "https://exhibition.invalid/show/flaky.png",
+      "kind": "resource",
+      "status": "captured",
+      "reason": null,
+      "depth": 0,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "final_url": "https://exhibition.invalid/show/flaky.png",
+      "media_type": "image/png",
+      "charset": null,
+      "sha256": "4929d7f3434e0c507c48750f18cad27894ccb1d80c1306b66fc7c81f1e95ecbf",
+      "bytes": 74,
+      "store_path": "store/49/4929d7f3434e0c507c48750f18cad27894ccb1d80c1306b66fc7c81f1e95ecbf.png",
+      "published_path": null,
+      "shared_with": [
+        "https://exhibition.invalid/show/tile-blue.png"
+      ],
+      "hops": []
+    },
+    {
+      "url": "https://exhibition.invalid/show/nested.css",
+      "kind": "resource",
+      "status": "captured",
+      "reason": null,
+      "depth": 0,
+      "parent": "https://exhibition.invalid/show/style.css",
+      "final_url": "https://exhibition.invalid/show/nested.css",
+      "media_type": "text/css",
+      "charset": "utf-8",
+      "sha256": "fe72eaed3260395f1c6d21df5953b6141d242395c7d12c48e5bc341270129aa4",
+      "bytes": 65,
+      "store_path": "store/fe/fe72eaed3260395f1c6d21df5953b6141d242395c7d12c48e5bc341270129aa4.css",
+      "published_path": "assets/css/fe72eaed3260.css",
+      "shared_with": [],
+      "hops": []
+    },
+    {
+      "url": "https://exhibition.invalid/outside.png",
+      "kind": "resource",
+      "status": "captured",
+      "reason": null,
+      "depth": 0,
+      "parent": "https://exhibition.invalid/show/nested.css",
+      "final_url": "https://exhibition.invalid/outside.png",
+      "media_type": "image/png",
+      "charset": null,
+      "sha256": "273156b173a91e88c157daf01fd6d772250bb26819e28462546eb9b2896c7c22",
+      "bytes": 70,
+      "store_path": "store/27/273156b173a91e88c157daf01fd6d772250bb26819e28462546eb9b2896c7c22.png",
+      "published_path": null,
+      "shared_with": [],
+      "hops": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/style.css",
+      "fetch_url": "https://exhibition.invalid/show/style.css",
+      "fragment": "",
+      "query": "",
+      "kind": "stylesheet",
+      "attribute": "href",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/32/32292eba1c96c5107f5eb35c14b40a27b0c73ff14cadf8d5b41b05d6a8da8b59.css"
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/favicon.ico",
+      "fetch_url": "https://exhibition.invalid/favicon.ico",
+      "fragment": "",
+      "query": "",
+      "kind": "resource",
+      "attribute": "href",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/83/838612a95128acb18efa5eacdfad8463afcc3ea1b4ce643f0f41a05947dca9cc.ico"
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/image.png?size=s",
+      "fetch_url": "https://exhibition.invalid/show/image.png?size=s",
+      "fragment": "",
+      "query": "size=s",
+      "kind": "resource",
+      "attribute": "src",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/57/5753e25d143eb0729482d6029b97d8a4bd2f7a0f0d28d4964300eb867a5940a0.png"
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/image.png?size=s",
+      "fetch_url": "https://exhibition.invalid/show/image.png?size=s",
+      "fragment": "",
+      "query": "size=s",
+      "kind": "resource",
+      "attribute": "srcset",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/57/5753e25d143eb0729482d6029b97d8a4bd2f7a0f0d28d4964300eb867a5940a0.png"
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/image-large.png",
+      "fetch_url": "https://exhibition.invalid/show/image-large.png",
+      "fragment": "",
+      "query": "",
+      "kind": "resource",
+      "attribute": "srcset",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/57/5753e25d143eb0729482d6029b97d8a4bd2f7a0f0d28d4964300eb867a5940a0.png"
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/tile-blue.png",
+      "fetch_url": "https://exhibition.invalid/show/tile-blue.png",
+      "fragment": "",
+      "query": "",
+      "kind": "inline_css",
+      "attribute": "style",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/49/4929d7f3434e0c507c48750f18cad27894ccb1d80c1306b66fc7c81f1e95ecbf.png"
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/other.html#a",
+      "fetch_url": "https://exhibition.invalid/show/other.html",
+      "fragment": "a",
+      "query": "",
+      "kind": "page",
+      "attribute": "href",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/ae/ae7dba1f1bee722abd4e84c9f24153ef7db7a48dd3174a9faaa68bbb0c039406.html"
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/other.html?lang=en#a",
+      "fetch_url": "https://exhibition.invalid/show/other.html?lang=en",
+      "fragment": "a",
+      "query": "lang=en",
+      "kind": "page",
+      "attribute": "href",
+      "status": "failed",
+      "reason": "http_error_status",
+      "local_path": null
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/calendar/2030",
+      "fetch_url": "https://exhibition.invalid/calendar/2030",
+      "fragment": "",
+      "query": "",
+      "kind": "page",
+      "attribute": "href",
+      "status": "external",
+      "reason": "out_of_scope_page_prefix",
+      "local_path": null
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://outside.invalid/whole-site",
+      "fetch_url": "https://outside.invalid/whole-site",
+      "fragment": "",
+      "query": "",
+      "kind": "page",
+      "attribute": "href",
+      "status": "external",
+      "reason": "out_of_scope_page_prefix",
+      "local_path": null
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "mailto:curator@exhibition.invalid",
+      "fetch_url": "mailto:curator@exhibition.invalid",
+      "fragment": "",
+      "query": "",
+      "kind": "non_http",
+      "attribute": "href",
+      "status": "excluded",
+      "reason": "non_http_scheme",
+      "local_path": null
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/detail.html#note",
+      "fetch_url": "https://exhibition.invalid/show/detail.html",
+      "fragment": "note",
+      "query": "",
+      "kind": "page",
+      "attribute": "href",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/a8/a82f6554f1a14223ddaed87a91cd0a28681b1f0b97e5f0f03d87ec5626e428e4.html"
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/jump.css",
+      "fetch_url": "https://exhibition.invalid/show/jump.css",
+      "fragment": "",
+      "query": "",
+      "kind": "stylesheet",
+      "attribute": "href",
+      "status": "external",
+      "reason": "out_of_scope_resource_origin",
+      "local_path": null
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/image.png?size=s",
+      "fetch_url": "https://exhibition.invalid/show/image.png?size=s",
+      "fragment": "",
+      "query": "size=s",
+      "kind": "resource",
+      "attribute": "poster",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/57/5753e25d143eb0729482d6029b97d8a4bd2f7a0f0d28d4964300eb867a5940a0.png"
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/media/tour.mp4",
+      "fetch_url": "https://exhibition.invalid/media/tour.mp4",
+      "fragment": "",
+      "query": "",
+      "kind": "media_excluded",
+      "attribute": "src",
+      "status": "excluded",
+      "reason": "media_intentionally_excluded",
+      "local_path": null
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/media/guide.mp3",
+      "fetch_url": "https://exhibition.invalid/media/guide.mp3",
+      "fragment": "",
+      "query": "",
+      "kind": "media_excluded",
+      "attribute": "src",
+      "status": "excluded",
+      "reason": "media_intentionally_excluded",
+      "local_path": null
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/flaky.png",
+      "fetch_url": "https://exhibition.invalid/show/flaky.png",
+      "fragment": "",
+      "query": "",
+      "kind": "resource",
+      "attribute": "src",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/49/4929d7f3434e0c507c48750f18cad27894ccb1d80c1306b66fc7c81f1e95ecbf.png"
+    },
+    {
+      "source": "https://exhibition.invalid/show/style.css",
+      "target": "https://exhibition.invalid/show/nested.css",
+      "fetch_url": "https://exhibition.invalid/show/nested.css",
+      "fragment": "",
+      "query": "",
+      "kind": "stylesheet",
+      "attribute": "css.@import",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/fe/fe72eaed3260395f1c6d21df5953b6141d242395c7d12c48e5bc341270129aa4.css"
+    },
+    {
+      "source": "https://exhibition.invalid/show/style.css",
+      "target": "https://exhibition.invalid/show/image.png?size=s",
+      "fetch_url": "https://exhibition.invalid/show/image.png?size=s",
+      "fragment": "",
+      "query": "size=s",
+      "kind": "inline_css",
+      "attribute": "css.url",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/57/5753e25d143eb0729482d6029b97d8a4bd2f7a0f0d28d4964300eb867a5940a0.png"
+    },
+    {
+      "source": "https://exhibition.invalid/show/other.html",
+      "target": "https://exhibition.invalid/show/style.css",
+      "fetch_url": "https://exhibition.invalid/show/style.css",
+      "fragment": "",
+      "query": "",
+      "kind": "stylesheet",
+      "attribute": "href",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/32/32292eba1c96c5107f5eb35c14b40a27b0c73ff14cadf8d5b41b05d6a8da8b59.css"
+    },
+    {
+      "source": "https://exhibition.invalid/show/other.html",
+      "target": "https://exhibition.invalid/show/index.html#top",
+      "fetch_url": "https://exhibition.invalid/show/index.html",
+      "fragment": "top",
+      "query": "",
+      "kind": "page",
+      "attribute": "href",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/4c/4c125216e95118181c100bef4a95fed0aae0bde18824aef9a9d13f3690d756a4.html"
+    },
+    {
+      "source": "https://exhibition.invalid/show/other.html",
+      "target": "https://exhibition.invalid/show/image.png?size=s",
+      "fetch_url": "https://exhibition.invalid/show/image.png?size=s",
+      "fragment": "",
+      "query": "size=s",
+      "kind": "resource",
+      "attribute": "srcset",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/57/5753e25d143eb0729482d6029b97d8a4bd2f7a0f0d28d4964300eb867a5940a0.png"
+    },
+    {
+      "source": "https://exhibition.invalid/show/other.html",
+      "target": "https://exhibition.invalid/show/image-large.png",
+      "fetch_url": "https://exhibition.invalid/show/image-large.png",
+      "fragment": "",
+      "query": "",
+      "kind": "resource",
+      "attribute": "srcset",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/57/5753e25d143eb0729482d6029b97d8a4bd2f7a0f0d28d4964300eb867a5940a0.png"
+    },
+    {
+      "source": "https://exhibition.invalid/show/other.html",
+      "target": "https://exhibition.invalid/show/image.png?size=s",
+      "fetch_url": "https://exhibition.invalid/show/image.png?size=s",
+      "fragment": "",
+      "query": "size=s",
+      "kind": "resource",
+      "attribute": "src",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/57/5753e25d143eb0729482d6029b97d8a4bd2f7a0f0d28d4964300eb867a5940a0.png"
+    },
+    {
+      "source": "https://exhibition.invalid/show/other.html",
+      "target": "https://exhibition.invalid/show/index.html#top",
+      "fetch_url": "https://exhibition.invalid/show/index.html",
+      "fragment": "top",
+      "query": "",
+      "kind": "page",
+      "attribute": "content",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/4c/4c125216e95118181c100bef4a95fed0aae0bde18824aef9a9d13f3690d756a4.html"
+    },
+    {
+      "source": "https://exhibition.invalid/show/detail.html",
+      "target": "https://exhibition.invalid/show/index.html#top",
+      "fetch_url": "https://exhibition.invalid/show/index.html",
+      "fragment": "top",
+      "query": "",
+      "kind": "page",
+      "attribute": "href",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/4c/4c125216e95118181c100bef4a95fed0aae0bde18824aef9a9d13f3690d756a4.html"
+    },
+    {
+      "source": "https://exhibition.invalid/show/detail.html",
+      "target": "https://exhibition.invalid/show/tile-blue.png",
+      "fetch_url": "https://exhibition.invalid/show/tile-blue.png",
+      "fragment": "",
+      "query": "",
+      "kind": "resource",
+      "attribute": "src",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/49/4929d7f3434e0c507c48750f18cad27894ccb1d80c1306b66fc7c81f1e95ecbf.png"
+    },
+    {
+      "source": "https://exhibition.invalid/show/nested.css",
+      "target": "https://exhibition.invalid/show/style.css",
+      "fetch_url": "https://exhibition.invalid/show/style.css",
+      "fragment": "",
+      "query": "",
+      "kind": "stylesheet",
+      "attribute": "css.@import",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/32/32292eba1c96c5107f5eb35c14b40a27b0c73ff14cadf8d5b41b05d6a8da8b59.css"
+    },
+    {
+      "source": "https://exhibition.invalid/show/nested.css",
+      "target": "https://exhibition.invalid/outside.png",
+      "fetch_url": "https://exhibition.invalid/outside.png",
+      "fragment": "",
+      "query": "",
+      "kind": "inline_css",
+      "attribute": "css.url",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/27/273156b173a91e88c157daf01fd6d772250bb26819e28462546eb9b2896c7c22.png"
+    }
+  ],
+  "failures": [
+    {
+      "url": "https://exhibition.invalid/show/other.html?lang=en",
+      "kind": "page",
+      "reason": "http_error_status",
+      "retryable": false,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "detail": "HTTP 404",
+      "hops": []
+    },
+    {
+      "url": "https://exhibition.invalid/show/jump.css",
+      "kind": "resource",
+      "reason": "redirect_left_scope",
+      "retryable": false,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "detail": "重定向在跳 https://outside.invalid/whole-site.css 越界（out_of_scope_resource_origin）",
+      "hops": [
+        {
+          "url": "https://exhibition.invalid/show/jump.css",
+          "status": 302,
+          "location": "https://exhibition.invalid/redirect/second"
+        },
+        {
+          "url": "https://exhibition.invalid/redirect/second",
+          "status": 302,
+          "location": "https://outside.invalid/whole-site.css"
+        }
+      ]
+    }
+  ]
+}

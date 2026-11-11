@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<title>离线核查报告</title>
+<style>
+body{font-family:sans-serif;max-width:70rem;margin:2rem auto;line-height:1.5}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{border:1px solid #bbb;padding:.35rem .5rem;text-align:left;
+vertical-align:top;word-break:break-all}
+.ok{background:#e6f6e6;padding:.8rem;border-left:4px solid #2a7}
+.bad{background:#fdecea;padding:.8rem;border-left:4px solid #c33}
+code{background:#f4f4f4;padding:.1rem .3rem}
+</style></head><body>
+<h1>离线核查报告</h1>
+<p class="bad">核查未通过：存在离线完整性问题，见下方违例列表，不得作为离线成品发布。</p>
+<p>生成时间：2026-11-11T19:47:38+00:00
+｜检查文件 5 个｜本地引用 38 条
+｜外部保留链接 6 条｜失败关系 2 条</p>
+<h2>违例</h2><ul><li>manifest.complete=false：存在失败或延期关系，原因 3 条，包不完整，不能宣称可完全离线阅读</li></ul>
+<h2>刻意保留外部访问的链接</h2>
+<table><thead><tr><th>URL</th><th>状态</th><th>未采集原因</th>
+<th>引用来源</th><th>出现位置</th></tr></thead>
+<tbody><tr><td>https://exhibition.invalid/calendar/2030</td><td>external</td><td>页面路径超出授权前缀</td><td>https://exhibition.invalid/show/index.html</td><td>href</td></tr><tr><td>https://exhibition.invalid/media/guide.mp3</td><td>excluded</td><td>音视频按策略不采集</td><td>https://exhibition.invalid/show/index.html</td><td>src</td></tr><tr><td>https://exhibition.invalid/media/tour.mp4</td><td>excluded</td><td>音视频按策略不采集</td><td>https://exhibition.invalid/show/index.html</td><td>src</td></tr><tr><td>https://exhibition.invalid/show/jump.css</td><td>external</td><td>静态资源 origin 未授权；重定向逐跳检查时越界</td><td>https://exhibition.invalid/show/index.html</td><td>href</td></tr><tr><td>https://exhibition.invalid/show/other.html?lang=en</td><td>failed</td><td>远端返回错误状态</td><td>https://exhibition.invalid/show/index.html</td><td>href</td></tr><tr><td>https://outside.invalid/whole-site</td><td>external</td><td>页面路径超出授权前缀</td><td>https://exhibition.invalid/show/index.html</td><td>href</td></tr></tbody></table>
+<h2>失败关系</h2>
+<table><thead><tr><th>URL</th><th>原因</th><th>详情</th></tr></thead>
+<tbody><tr><td>https://exhibition.invalid/show/other.html?lang=en</td><td>远端返回错误状态</td><td>HTTP 404</td></tr><tr><td>https://exhibition.invalid/show/jump.css</td><td>重定向逐跳检查时越界</td><td>重定向在跳 https://outside.invalid/whole-site.css 越界（out_of_scope_resource_origin）</td></tr></tbody></table>
+<h2>范围与预算</h2>
+<pre>{
+  &quot;scope&quot;: {
+    &quot;page_prefixes&quot;: [
+      &quot;https://exhibition.invalid/show/&quot;
+    ],
+    &quot;resource_origins&quot;: [
+      &quot;https://exhibition.invalid&quot;
+    ]
+  },
+  &quot;budgets&quot;: {
+    &quot;max_pages&quot;: 8,
+    &quot;max_resources&quot;: 40,
+    &quot;max_bytes&quot;: 1048576,
+    &quot;max_depth&quot;: 3
+  },
+  &quot;counters&quot;: {
+    &quot;pages&quot;: 3,
+    &quot;resources&quot;: 8,
+    &quot;stored_bytes&quot;: 1995
+  }
+}</pre>
+<p>本报告由静态检查生成，过程中不发起任何网络请求。</p>
+</body></html>

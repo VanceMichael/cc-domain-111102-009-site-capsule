@@ -1,0 +1,134 @@
+{
+  "schema": "site-capsule/manifest/1",
+  "generated_at": "2026-11-11T19:46:06+00:00",
+  "seeds": [
+    "https://exhibition.invalid/show/index.html"
+  ],
+  "scope": {
+    "page_prefixes": [
+      "https://exhibition.invalid/show/"
+    ],
+    "resource_origins": [
+      "https://exhibition.invalid"
+    ]
+  },
+  "budgets": {
+    "max_pages": 8,
+    "max_resources": 20,
+    "max_bytes": 1048576,
+    "max_depth": 3
+  },
+  "counters": {
+    "pages": 1,
+    "resources": 2,
+    "stored_bytes": 200
+  },
+  "complete": true,
+  "incomplete_reasons": [],
+  "pages": [
+    {
+      "url": "https://exhibition.invalid/show/index.html",
+      "kind": "page",
+      "status": "captured",
+      "reason": null,
+      "depth": 0,
+      "parent": null,
+      "final_url": "https://exhibition.invalid/show/index.html",
+      "media_type": "text/html",
+      "charset": "utf-8",
+      "sha256": "3c8a71cc5c6a10e09a6f74c533c7b6fbb91d8dbc601fea81202ad0ed31c713e9",
+      "bytes": 103,
+      "store_path": "store/3c/3c8a71cc5c6a10e09a6f74c533c7b6fbb91d8dbc601fea81202ad0ed31c713e9.html",
+      "published_path": "pages/show/index.html",
+      "shared_with": [],
+      "hops": []
+    }
+  ],
+  "resources": [
+    {
+      "url": "https://exhibition.invalid/show/s.css",
+      "kind": "resource",
+      "status": "captured",
+      "reason": null,
+      "depth": 0,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "final_url": "https://exhibition.invalid/show/s.css",
+      "media_type": "text/css",
+      "charset": null,
+      "sha256": "23374279b898fec589ec3d430d28cfbdba06810a51d7b276af0a7013a67eeb71",
+      "bytes": 27,
+      "store_path": "store/23/23374279b898fec589ec3d430d28cfbdba06810a51d7b276af0a7013a67eeb71.css",
+      "published_path": "assets/css/23374279b898.css",
+      "shared_with": [],
+      "hops": []
+    },
+    {
+      "url": "https://exhibition.invalid/show/i.png",
+      "kind": "resource",
+      "status": "captured",
+      "reason": null,
+      "depth": 0,
+      "parent": "https://exhibition.invalid/show/index.html",
+      "final_url": "https://exhibition.invalid/show/i.png",
+      "media_type": "image/png",
+      "charset": null,
+      "sha256": "e7d9c902dccc1dc8394e83db4eaeaf784930bea15897b777bdebc29d193ea21d",
+      "bytes": 70,
+      "store_path": "store/e7/e7d9c902dccc1dc8394e83db4eaeaf784930bea15897b777bdebc29d193ea21d.png",
+      "published_path": null,
+      "shared_with": [],
+      "hops": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/s.css",
+      "fetch_url": "https://exhibition.invalid/show/s.css",
+      "fragment": "",
+      "query": "",
+      "kind": "stylesheet",
+      "attribute": "href",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/23/23374279b898fec589ec3d430d28cfbdba06810a51d7b276af0a7013a67eeb71.css"
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/i.png",
+      "fetch_url": "https://exhibition.invalid/show/i.png",
+      "fragment": "",
+      "query": "",
+      "kind": "resource",
+      "attribute": "src",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/e7/e7d9c902dccc1dc8394e83db4eaeaf784930bea15897b777bdebc29d193ea21d.png"
+    },
+    {
+      "source": "https://exhibition.invalid/show/index.html",
+      "target": "https://exhibition.invalid/show/index.html#top",
+      "fetch_url": "https://exhibition.invalid/show/index.html",
+      "fragment": "top",
+      "query": "",
+      "kind": "page",
+      "attribute": "href",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/3c/3c8a71cc5c6a10e09a6f74c533c7b6fbb91d8dbc601fea81202ad0ed31c713e9.html"
+    },
+    {
+      "source": "https://exhibition.invalid/show/s.css",
+      "target": "https://exhibition.invalid/show/i.png",
+      "fetch_url": "https://exhibition.invalid/show/i.png",
+      "fragment": "",
+      "query": "",
+      "kind": "inline_css",
+      "attribute": "css.url",
+      "status": "captured",
+      "reason": null,
+      "local_path": "store/e7/e7d9c902dccc1dc8394e83db4eaeaf784930bea15897b777bdebc29d193ea21d.png"
+    }
+  ],
+  "failures": []
+}

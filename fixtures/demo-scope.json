@@ -1,0 +1,15 @@
+{
+  "seeds": [
+    "https://exhibition.invalid/show/index.html"
+  ],
+  "page_prefixes": [
+    "https://exhibition.invalid/show/"
+  ],
+  "resource_origins": [
+    "https://exhibition.invalid"
+  ],
+  "max_pages": 8,
+  "max_resources": 40,
+  "max_bytes": 1048576,
+  "max_depth": 3
+}

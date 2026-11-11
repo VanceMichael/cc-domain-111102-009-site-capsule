@@ -1,0 +1,187 @@
+{
+  "https://exhibition.invalid/show/index.html": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8"
+      },
+      "body": "<!doctype html>\n<html lang=\"zh-CN\"><head><meta charset=\"utf-8\">\n<base href=\"/show/\">\n<link rel=\"stylesheet\" href=\"style.css\">\n<link rel=\"icon\" href=\"/favicon.ico\">\n</head><body>\n<h1 id=\"top\">合成艺术展</h1>\n<img src=\"image.png?size=s\" alt=\"主视觉\"\n     srcset=\"image.png?size=s 1x, image-large.png 2x\">\n<p>背景块：<span class=\"hero\">hero</span></p>\n<div style=\"background: url('tile-blue.png') repeat;\">瓷砖纹理</div>\n<nav>\n  <a href=\"other.html#a\">展品页（片段保留）</a>\n  <a href=\"other.html?lang=en#a\">同路径不同查询的另一身份</a>\n  <a href=\"/calendar/2030\">日历（页面范围外，越界不跟随）</a>\n  <a href=\"https://outside.invalid/whole-site\">外部整站链接</a>\n  <a href=\"mailto:curator@exhibition.invalid\">联系邮箱</a>\n  <a href=\"detail.html#note\">详情页（深度/预算边界）</a>\n</nav>\n<link rel=\"stylesheet\" href=\"jump.css\">\n<video controls poster=\"image.png?size=s\" src=\"/media/tour.mp4\"></video>\n<audio src=\"/media/guide.mp3\"></audio>\n<img src=\"flaky.png\" alt=\"中断后可恢复的图片\">\n</body></html>\n"
+    }
+  ],
+  "https://exhibition.invalid/show/other.html": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8"
+      },
+      "body": "<!doctype html>\n<html lang=\"zh-CN\"><head><meta charset=\"utf-8\">\n<link rel=\"stylesheet\" href=\"style.css\"></head>\n<body>\n<h1 id=\"a\">合成展品</h1>\n<a href=\"index.html#top\">返回（片段保留）</a>\n<img srcset=\"image.png?size=s 1x, image-large.png 2x\" src=\"image.png?size=s\">\n<meta http-equiv=\"refresh\" content=\"0; url=index.html#top\">\n</body></html>\n"
+    }
+  ],
+  "https://exhibition.invalid/show/detail.html": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8"
+      },
+      "body": "<!doctype html>\n<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"></head>\n<body>\n<h1 id=\"note\">展品详情</h1>\n<a href=\"index.html#top\">返回</a>\n<img src=\"tile-blue.png\" alt=\"细节图\">\n</body></html>\n"
+    }
+  ],
+  "https://exhibition.invalid/show/based.html": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8"
+      },
+      "body": "<!doctype html>\n<html><head><base href=\"https://cdn.invalid/assets/\"></head>\n<body><img src=\"solo.png\" alt=\"外部 base 上的图片\"></body></html>\n"
+    }
+  ],
+  "https://exhibition.invalid/show/style.css": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/css; charset=utf-8"
+      },
+      "body": "@import \"nested.css\";\n.hero { background: url(image.png?size=s); }\n"
+    }
+  ],
+  "https://exhibition.invalid/show/nested.css": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/css; charset=utf-8"
+      },
+      "body": "@import \"style.css\";\n.small { background: url(../outside.png); }\n"
+    }
+  ],
+  "https://exhibition.invalid/show/image.png?size=s": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "image/png"
+      },
+      "body": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO4o6HxHwAFPAIs0Zo91QAAAABJRU5ErkJggg==",
+      "base64": true
+    }
+  ],
+  "https://exhibition.invalid/show/image-large.png": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "image/png"
+      },
+      "body": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO4o6HxHwAFPAIs0Zo91QAAAABJRU5ErkJggg==",
+      "base64": true
+    }
+  ],
+  "https://exhibition.invalid/show/tile-blue.png": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "image/png"
+      },
+      "body": "iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEUlEQVR42mPQiLrzH4QZYAwATxgJdULeJBQAAAAASUVORK5CYII=",
+      "base64": true
+    }
+  ],
+  "https://exhibition.invalid/favicon.ico": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "image/x-icon"
+      },
+      "body": "AAABAEZBS0VJQ09O",
+      "base64": true
+    }
+  ],
+  "https://exhibition.invalid/outside.png": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "image/png"
+      },
+      "body": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNoaGj4DwAFhAKAU5N0NgAAAABJRU5ErkJggg==",
+      "base64": true
+    }
+  ],
+  "https://exhibition.invalid/show/jump.css": [
+    {
+      "status": 302,
+      "headers": {
+        "Location": "/redirect/second"
+      }
+    }
+  ],
+  "https://exhibition.invalid/redirect/second": [
+    {
+      "status": 302,
+      "headers": {
+        "Location": "https://outside.invalid/whole-site.css"
+      }
+    }
+  ],
+  "https://outside.invalid/whole-site.css": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/css; charset=utf-8"
+      },
+      "body": "body{color:red}"
+    }
+  ],
+  "https://outside.invalid/whole-site": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8"
+      },
+      "body": "<h1>never archived</h1>"
+    }
+  ],
+  "https://exhibition.invalid/show/flaky.png": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "image/png"
+      },
+      "body": "iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEUlEQVR42mPQiLrzH4QZYAwATxgJdULeJBQAAAAASUVORK5CYII=",
+      "base64": true,
+      "stream_failure": {
+        "after_bytes": 20
+      }
+    },
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "image/png"
+      },
+      "body": "iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEUlEQVR42mPQiLrzH4QZYAwATxgJdULeJBQAAAAASUVORK5CYII=",
+      "base64": true
+    }
+  ],
+  "https://exhibition.invalid/show/missing.html": [
+    {
+      "status": 404,
+      "headers": {},
+      "body": "not found"
+    }
+  ],
+  "https://cdn.invalid/assets/solo.png": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "image/png"
+      },
+      "body": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNoaGj4DwAFhAKAU5N0NgAAAABJRU5ErkJggg==",
+      "base64": true
+    }
+  ],
+  "https://exhibition.invalid/calendar/2030": [
+    {
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8"
+      },
+      "body": "<h1>calendar</h1>"
+    }
+  ]
+}
